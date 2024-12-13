@@ -1,0 +1,407 @@
+/* Định dạng chung cho các thành phần */
+body {
+  background-color: #f8f9fa; /* Màu nền sáng */
+  color: #333; /* Màu chữ tối */
+}
+
+/* Định dạng cho header */
+header {
+  border-bottom: 1px solid #ddd;
+  background-color: #000; /* Màu nền xám đen cho header */
+  color: white;
+}
+
+header h1 {
+  color: #e74c3c; /* Màu đỏ dịu cho tên website */
+}
+
+/* Top bar */
+.bg-light {
+  background-color: #f0f0f0 !important; /* Màu xám nhạt cho top bar */
+}
+
+/* Định dạng chung cho các nút */
+.btn {
+  border-radius: 12px; /* Bo tròn các nút */
+  padding: 8px 16px; /* Điều chỉnh padding để nút có kích thước hợp lý */
+  font-weight: bold; /* Làm đậm chữ để nút nổi bật hơn */
+}
+
+.btn-no-border {
+  border-radius: 12px; /* Bo tròn các nút */
+  padding: 8px 16px; /* Điều chỉnh padding để nút có kích thước hợp lý */
+  font-weight: bold; /* Làm đậm chữ để nút nổi bật hơn */
+  border: none;
+}
+
+/* Nút nền đen */
+.btn-outline-primary, .btn-outline-secondary {
+  background-color: #343a40; /* Nền đen */
+  color: white; /* Chữ màu trắng */
+  border-color: #343a40; /* Viền đen */
+}
+
+/* Nút khi hover (chuyển sang màu đỏ) */
+.btn-outline-primary:hover, .btn-outline-secondary:hover {
+  background-color: #e74c3c; /* Nền đỏ khi hover */
+  border-color: #e74c3c; /* Viền đỏ khi hover */
+  color: white; /* Chữ màu trắng */
+}
+
+/* Các nút trong dropdown */
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: white;
+  border-radius: 8px; /* Bo tròn các mục trong dropdown */
+}
+
+.dropdown-item:hover {
+  background-color: #e74c3c; /* Nền đỏ khi hover */
+  color: white; /* Chữ trắng */
+}
+
+/* Cải tiến navbar */
+.navbar {
+  background-color: #222222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng mờ */
+}
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #ddd;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e74c3c;
+  background-color: #333;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Cải thiện nút menu hamburger */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='white' d='M0 6h30v4H0zm0 7h30v4H0zm0 7h30v4H0z'/%3E%3C/svg%3E");
+}
+
+/* Cải thiện tooltip cho các biểu tượng */
+.nav-link[data-bs-toggle="tooltip"]:hover {
+  color: #fff;
+}
+
+.navbar-nav .nav-item .fa {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .fa:hover {
+  color: #e74c3c;
+}
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+}
+
+.hero-img-wrap img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}
+
+/* Đảm bảo sản phẩm luôn có kích thước đồng đều */
+.product-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Đảm bảo tên sản phẩm không bị ngắt dòng */
+.product-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Cải thiện phần hiển thị giá sản phẩm */
+.product-price {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Căn chỉnh các nút hành động trong một hàng */
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cải thiện giao diện nút bấm */
+.product-actions button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.product-actions .btn-sm {
+    font-size: 1.2rem;
+}
+
+/* Đảm bảo hình ảnh sản phẩm luôn đẹp */
+.product-image img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.product-thumbnail {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-thumbnail {
+    transform: scale(1.05);
+}
+
+/* Product info section */
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+/* Icons */
+.product-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-cross img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Tối ưu giao diện di động */
+@media (max-width: 767.98px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+
+/* Style for buttons inside product-info on the same row */
+.product-info .product-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-actions .btn {
+    font-size: 0.875rem; /* Smaller font size for buttons */
+    padding: 8px 16px;
+}
+
+.product-actions .btn:hover {
+    opacity: 0.9;
+}
+
+/* Specific button styles */
+.product-actions .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.product-actions .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.product-actions .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.product-actions .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Icons inside buttons */
+.product-actions .fas, .product-actions .fa {
+    margin-right: 5px;
+}
+
+
+/* Cải thiện kiểu dáng tổng thể của phần đánh giá */
+.product-reviews h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #007bff;
+}
+
+/* Tạo bóng và viền bo tròn cho mỗi mục đánh giá */
+.review-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tên người dùng và điểm đánh giá */
+.reviewer-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.review-rating {
+    font-size: 1.2rem;
+    color: #ffc107;
+}
+
+/* Định dạng nội dung nhận xét */
+.review-comment {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Định dạng ngày tháng */
+.review-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Đảm bảo hình ảnh và video hiển thị đẹp */
+.review-content img, .review-content video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cải thiện giao diện không có đánh giá */
+.text-muted {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Điều chỉnh khoảng cách giữa các mục */
+.review-list {
+    padding-left: 0;
+    list-style: none;
+}
